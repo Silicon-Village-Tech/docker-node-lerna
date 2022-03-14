@@ -22,10 +22,11 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     
     - name: Build the Docker image
-      run: docker build --tag guardezi/flutter-firebase:latest --tag guardezi/flutter-firebase:${{github.run_number}} sdk
+      run: docker build --tag siliconvillage/node-lerna:latest --tag siliconvillage/node-lerna:${{github.run_number}} sdk
     
     - name: Push Docker Image
-      run: docker push guardezi/flutter-firebase:${{github.run_number}}
+      run: docker push siliconvillage/node-lerna:${{github.run_number}}
 
     - name: Push Docker Image
-      run: docker push guardezi/flutter-firebase:latest
+      run: docker push siliconvillage/node-lerna:latest
+
