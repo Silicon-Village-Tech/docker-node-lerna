@@ -1,4 +1,4 @@
-FROM 14.19-alpine
+FROM node:14.19-alpine
 # FROM node:slim
 USER root
 
